@@ -1,7 +1,7 @@
 // You are given a rectangular matrix of integers. Starting from the outer boundary, traverse the matrix in a clockwise manner and continue moving inward layer by layer until all elements are visited.
-#include<stdio.h>
+#include <stdio.h>
 
-    int main()
+int main()
 {
     int r, c, top = 0, bottom, left = 0, right;
 
@@ -10,7 +10,6 @@
 
     bottom = r - 1;
     right = c - 1;
-
 
     int matrix[50][50];
 
@@ -24,7 +23,6 @@
     }
 
     printf("Spiral order is:\n");
-
 
     while (top <= bottom && left <= right)
     {
